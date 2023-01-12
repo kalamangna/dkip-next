@@ -3,10 +3,8 @@ import Link from "next/link"
 import { getDate } from "../utils/utils"
 
 export default function Post({ post }) {
-  console.log("post", post)
-
   return (
-    <div className="card mb-3">
+    <div className="card">
       <Link href={`/posts/${post.slug}`}>
         <Image
           src={

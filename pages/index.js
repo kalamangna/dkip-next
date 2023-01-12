@@ -3,8 +3,6 @@ import { getPosts } from "../utils/wordpress"
 import Post from "../components/Post"
 
 export default function Home({ posts }) {
-  console.log("posts", posts)
-
   return (
     <>
       <Head>
@@ -15,11 +13,11 @@ export default function Home({ posts }) {
       </Head>
 
       <main>
-        <div className="container pt-5">
-          <h1 className="text-center pb-5">DKIP Next</h1>
+        <div className="container">
+          <h1 className="text-center">DKIP Next</h1>
 
           <div>
-            <h2 className="pb-3">Berita</h2>
+            <h2 className="">Berita</h2>
 
             <div className="row">
               {posts.map((post) => {
